@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add Task</h2>
+<form method="POST" action="/add">
+    <input type="text" name="task" placeholder="Enter task" required>
+    <button type="submit">Add</button>
+</form>
+
+<h2>Tasks</h2>
+<div class="tasks">
+    {% for task in tasks %}
+        <div class="task-card">
+            <p {% if task.status == 1 %}class="completed"{% endif %}>
+                {{ task.task }}
+            </p>
+
+            {% if task.status == 0 %}
+                <a href="/complete/{{ task.id }}">Complete</a>
+            {% endif %}
+            <a href="/delete/{{ task.id }}">Delete</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
