@@ -64,13 +64,6 @@ todo-flask-app/
 
 ---
 
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash id="j4l8pt"
-git clone https://github.com/your-username/todo-flask-app.git
-```
 
 ### Navigate to Project Folder
 
@@ -94,15 +87,10 @@ python app.py
 
 ## 🌐 Live Demo
 
-Add your deployment link here.
+https://todo-flask-app-f0r3.onrender.com/
 
 ---
 
-## 📸 Screenshots
-
-Add project screenshots in the screenshots folder.
-
----
 
 ## 🔮 Future Improvements
 
